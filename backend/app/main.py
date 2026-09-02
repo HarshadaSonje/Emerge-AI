@@ -52,8 +52,14 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
+
+        # Vercel production domain
+        "https://emerge-ai.vercel.app",
+
+        # Vercel deployment URLs
+        "https://emerge-ai-git-main-harshada-s-projects1.vercel.app",
+        "https://emerge-eyofpk-harshada-s-projects1.vercel.app",
     ],
-    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
